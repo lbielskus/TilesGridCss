@@ -1,0 +1,124 @@
+section{
+    margin-bottom: 50px;
+}
+
+section > div{
+    background-color: lightgrey;
+}
+
+section > div:nth-last-child(odd){
+    background-color: rgb(236, 230, 230);
+}
+.wrapper1{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+}
+
+
+
+
+
+
+.wrapper2{
+    display: grid;
+    grid-template-columns: repeat(1fr 2fr 1fr);
+    gap: 1rem;
+    grid-auto-rows: minmax(100px, 200px);
+}
+
+.nested{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3px;
+}
+
+.nested > div{
+    border: 1px solid red;
+}
+
+.nestedAgain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3px;
+}
+
+.nestedAgain > div{
+    border: 1px solid blue;
+}
+
+
+
+.wrapper3{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+    justify-content: end;
+    align-items: end;
+}
+
+.box1{
+    justify-self: stretch;
+    align-self: center;
+}
+
+.box2{
+    justify-self: start;
+    align-self: end;
+}
+
+.box3{
+    justify-self: start;
+    align-self: start;
+}
+
+.box4{
+    justify-self: center;
+    align-self: stretch;
+}
+
+.wrapper4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+}
+
+.box21{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    
+    
+}
+
+.box22{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    
+}
+
+.box23{
+    
+    
+    
+}
+
+.box24{
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+.hide{
+    display: none;
+}
